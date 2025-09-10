@@ -1,0 +1,9 @@
+Coloca los widgets uno debajo del otro (vertical) o uno al lado del otro (horizontal).
+Es muy fácil de usar, pero tienes menos control sobre la posición exacta.
+Ejemplo:
+
+import tkinter as tk
+root = tk.Tk()
+label = tk.Label(root, text="Hola")
+label.pack()
+root.mainloop()
