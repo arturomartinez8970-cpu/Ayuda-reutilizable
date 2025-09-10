@@ -1,0 +1,9 @@
+Permite colocar los widgets en posiciones exactas usando coordenadas x e y.
+Es útil si necesitas un control absoluto sobre la posición.
+Ejemplo:
+
+import tkinter as tk
+root = tk.Tk()
+label = tk.Label(root, text="Posición exacta")
+label.place(x=50, y=100)
+root.mainloop()
