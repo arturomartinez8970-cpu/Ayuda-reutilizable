@@ -1,0 +1,25 @@
+Una tupla en Python es una estructura de datos que permite almacenar varios elementos en una sola variable. 
+Es similar a una lista, pero las tuplas son inmutables, es decir, no se pueden modificar después de su creación.
+Ejemplo genérico de tupla:
+
+# Crear una tupla
+mi_tupla = (1, "hola", 3.14, True)
+
+# Acceder a elementos
+print(mi_tupla[0])  # Imprime: 1
+print(mi_tupla[1])  # Imprime: hola
+
+# Recorrer una tupla
+for elemento in mi_tupla:
+    print(elemento)
+
+# Desempaquetar una tupla
+a, b, c, d = mi_tupla
+print(a, b, c, d)
+
+Explicación:
+
+Las tuplas se definen usando paréntesis () y pueden contener diferentes tipos de datos.
+Son inmutables: no puedes cambiar, agregar ni eliminar elementos después de crearlas.
+Puedes acceder a sus elementos por índice y recorrerlas con un bucle.
+Puedes desempaquetar sus valores en variables individuales.
