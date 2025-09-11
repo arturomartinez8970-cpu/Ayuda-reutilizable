@@ -1,0 +1,31 @@
+En Tkinter, una caja de texto para recibir información del usuario se llama Entry. Aquí tienes cómo crearla y obtener el texto que el usuario escribe:
+
+Crear la caja de texto:
+
+import tkinter as tk
+
+root = tk.Tk()
+entrada = tk.Entry(root)
+entrada.pack()  # O puedes usar grid/place
+
+root.mainloop()
+
+Obtener el texto que el usuario escribió:
+valor = entrada.get()
+
+Normalmente, usas un botón para leer el valor cuando el usuario termina de escribir. Ejemplo completo:
+
+import tkinter as tk
+
+def mostrar_texto():
+    texto = entrada.get()
+    print("El usuario escribió:", texto)
+
+root = tk.Tk()
+entrada = tk.Entry(root)
+entrada.pack()
+
+boton = tk.Button(root, text="Mostrar texto", command=mostrar_texto)
+boton.pack()
+
+root.mainloop()
